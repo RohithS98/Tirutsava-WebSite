@@ -18,7 +18,7 @@ import {
         MatButtonModule, 
         MatCardModule, 
         MatToolbarModule,
-        MatButtonToggleModule,
+        MatButtonToggleModule
     ],
 })
 

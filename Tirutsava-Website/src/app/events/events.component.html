@@ -2,7 +2,7 @@
 
     <div class="title">
        <mat-card>
-          <h2> EVENTS IS UNDER CONSTRUCTION </h2>
+          <h2 style="text-align: center; color: crimson;"> EVENTS IS UNDER CONSTRUCTION </h2>
        </mat-card>
     </div>
 
@@ -10,9 +10,36 @@
 
     <div id="toggle">
     <mat-button-toggle-group [(ngModel)]="selected"> 
-      <mat-button-toggle value="All"> Show All </mat-button-toggle>
-      <mat-button-toggle value="Category"> Category </mat-button-toggle>
+      <mat-button-toggle value="true"> Show All </mat-button-toggle>
+      <mat-button-toggle value="false"> Category </mat-button-toggle>
     </mat-button-toggle-group>
     </div>
-    {{selected}}
+
+    <br>
+
+    <div id="view" [ngSwitch]="selected">
+        <div id="AllView" *ngSwitchCase="'true'"> 
+                <div class="tile" *ngFor="let event of events"> 
+                    <h3>{{event.name}}</h3>
+                </div>
+           
+        </div>
+        
+        <div id="CategoryView" *ngSwitchCase="'false'" > 
+                <mat-card>
+                        <h2> CULTURAL EVENTS </h2>
+                        <div class="tile" *ngFor="let event of cultEvents"> 
+                                <h3>{{event.name}}</h3>
+                        </div>
+                </mat-card>
+                
+                <mat-card>
+                        <h2> TECHNICAL EVENTS </h2>
+                        <div class="tile" *ngFor="let event of techEvents"> 
+                                <h3>{{event.name}}</h3>
+                        </div>
+                </mat-card>
+        </div>
+    </div>
+
 </div>

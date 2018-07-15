@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { mockEvents, mockTechEvents, mockCultEvents } from './mockevents';
 
 @Component({
   selector: 'app-events',
@@ -6,8 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent implements OnInit {
-  selected="All";
-         
+  selected="true";
+  events = mockEvents;
+  techEvents = mockTechEvents;
+  cultEvents = mockCultEvents;
+  
   constructor() {}
 
   ngOnInit() {

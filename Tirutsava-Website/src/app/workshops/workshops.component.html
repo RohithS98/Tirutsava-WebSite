@@ -1,9 +1,16 @@
 <div class="back">
 
-    <div class="title" style="margin: auto">
+    <div class="title">
        <mat-card>
-          <h2>WORKSHOPS IS UNDER CONSTRUCTION </h2>
+            <h2 style="text-align: center; color: crimson;"> WORKSHOPS IS UNDER CONSTRUCTION </h2>
        </mat-card>
     </div>
-
+    <br>
+    <div id="view">
+            <mat-card>
+                    <div class="tile" *ngFor="let workshop of workshops"> 
+                            <h3>{{workshop.name}}</h3>
+                    </div>
+            </mat-card>
+    </div>
 </div>
