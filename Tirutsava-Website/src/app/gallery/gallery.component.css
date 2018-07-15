@@ -1,0 +1,13 @@
+.back{
+
+    background-color: teal;
+    /* Uncomment this to set image */
+    /* background-image: url(../../assets/gallery/back.jpg); */
+    background-size: 100%;
+
+    height: -webkit-fill-available;
+    
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}

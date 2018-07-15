@@ -16,7 +16,7 @@ const routes: Routes = [
     {path: 'workshops', component: WorkshopsComponent},
     {path: 'proshows', component: ProshowsComponent},
     {path: 'timeline', component:TimelineComponent},
-    {path: 'galley', component:GalleryComponent},
+    {path: 'gallery', component:GalleryComponent},
     {path: 'aboutus', component:AboutusComponent},
     {path: 'contactus', component:ContactusComponent},
 

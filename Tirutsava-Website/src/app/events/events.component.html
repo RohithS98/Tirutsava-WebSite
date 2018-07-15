@@ -1,3 +1,18 @@
-<p>
-  events works!
-</p>
+<div class="back">
+
+    <div class="title">
+       <mat-card>
+          <h2> EVENTS IS UNDER CONSTRUCTION </h2>
+       </mat-card>
+    </div>
+
+    <br>
+
+    <div id="toggle">
+    <mat-button-toggle-group [(ngModel)]="selected"> 
+      <mat-button-toggle value="All"> Show All </mat-button-toggle>
+      <mat-button-toggle value="Category"> Category </mat-button-toggle>
+    </mat-button-toggle-group>
+    </div>
+    {{selected}}
+</div>
