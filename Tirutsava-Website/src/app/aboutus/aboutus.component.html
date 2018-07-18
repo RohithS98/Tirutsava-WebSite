@@ -6,4 +6,18 @@
        </mat-card>
     </div>
 
+    <div class = "view" *ngFor="let com of aboutUs">
+        <mat-card>
+            <h1>{{com.name}}</h1>
+            <br>
+            <div class = "peoplecont">
+                <div class = "tile" *ngFor="let person of com.members">
+                    <img src="../../assets/aboutus/placeholder.png" alt = "why">
+                    <h2>{{person.name}}</h2>
+                    <h3>{{person.other}}</h3>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+
 </div>

@@ -6,8 +6,60 @@
     background-size: 100%;
 
     height: -webkit-fill-available;
-    
+
     display: flex;
     flex-flow: column;
     flex-grow: 1;
+}
+
+.view{
+    min-height: -webkit-fill-available;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 10px;
+    margin-right:10px;
+    margin-top: 15px;
+}
+
+.peoplecont {
+    display : flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.tile{
+
+    flex: 1 1;
+    min-height: 300px;
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    background: #efefef;
+
+}
+
+.tile h2{
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.tile h3{
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tile img{
+    display : block;
+    margin: auto;
+    width: 200px;
+    height : 200px;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
 }
