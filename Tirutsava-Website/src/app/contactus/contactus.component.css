@@ -39,3 +39,8 @@
 .inp {
     width: 100%;
 }
+
+.form submit{
+    display : block;
+    margin-left: 80%;
+}
