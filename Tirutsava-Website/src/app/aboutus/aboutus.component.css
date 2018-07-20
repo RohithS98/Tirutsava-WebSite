@@ -3,21 +3,27 @@
     background-color: teal;
     /* Uncomment this to set image */
     /* background-image: url(../../assets/aboutus/back.jpg); */
-    background-size: 100%;
-
-    height: -webkit-fill-available;
+    /* background-size: 100%; */
+    
+    /* height: -webkit-fill-available; */
 
     display: flex;
     flex-flow: column;
     flex-grow: 1;
+    padding-bottom: 2%;
 }
 
+.views{
+
+    flex-flow: column;
+}
 .view{
-    min-height: -webkit-fill-available;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: 10px;
-    margin-right:10px;
+    flex: 1 1;
+    flex-flow: row;
+    padding-left: 5%;   
+    padding-right: 5%;
+    margin-left: 2%;
+    margin-right:2%;
     margin-top: 15px;
 }
 
@@ -29,9 +35,9 @@
 
 .tile{
 
-    flex: 1 1;
-    min-height: 300px;
-    min-width: 400px;
+    flex: 1 1 ;
+    /* min-height: 300px;
+    min-width: 400px; */
     max-width: 400px;
     max-height: 300px;
     padding: 10px;
