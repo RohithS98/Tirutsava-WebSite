@@ -20,9 +20,13 @@
 }
 .Toggle{
     display: flex;
+    
+    align-items: center;
+    position: relative;
+    
     flex-direction: column;
     
-    flex: 1 1   ;
+    flex: 1 1;
     height: 100%;
     margin: 10px;
 }
@@ -30,7 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    flex: 2 2;
+    flex: 3 3 ;
     height: 100%;
     margin: 5px;
 }
@@ -39,7 +43,7 @@
     flex-direction: column;
     
     align-content: flex-start;
-    flex: 2 2;
+    flex: 3 3;
     height: 100%;
     margin: 5px;
 }
@@ -73,30 +77,72 @@ li{
 .image {
     /* max-height: 500px; */
     max-width: 500px;
-
+    max-height: 500px;
+    
     width: fit-content;
     height: fit-content;
-    margin: 6px;
+    margin: 20px;
     border: 4px solid #eee;
     box-shadow: #555 1px 1px 8px 1px;
 }
 
 .leftImage{
     align-self: flex-end;
+    
 }
 
 .rightImage{
     align-self: flex-start;
+   
 }
 
 mat-button-toggle{
-    width: 100px;
+    width: 200px;
     text-align: center;
+    margin: 20px;
     background: #eee;
     color: black;
 }
 mat-button-toggle:hover{
-    width: 200px;
+    
     text-align: center;
     background: #999;
+}
+
+modal{
+    width: 500px;
+    flex: 3;
+}
+
+.modal-image{
+    width: fit-content;
+    height: fit-content;
+    max-width: 1200px;;
+    margin-top: 20px;
+    margin-right: 500px;
+    margin-left: 200px;
+    border:solid 3mm #eee;
+
+}
+.navbuttons{
+    display: flex;
+    margin-right: 300px;
+    float: left;
+
+}
+
+.pre{
+    width: 100px;
+    height: 50px;
+    
+    text-align: center;
+    
+    
+}
+
+.next{
+    width: 100px;
+    height: 50px;
+    
+    text-align: center;
 }
