@@ -34,7 +34,7 @@ const IMAGES2 = [
     {"id":3, "category": "camping", "caption": "App logo", "url": "assets/img/app.png"},
     {"id":6, "category": "boats", "caption": "Art Work", "url": "assets/img/lamp.png"},
     {"id":7, "category": "boats", "caption": "Art Work", "url": "assets/img/teri.png"},
-    {"id":4, "category": "boats", "caption": "Art Work", "url": "assets/img/barrel.png"},
-    {"id":5, "category": "boats", "caption": "Art Work", "url": "assets/img/dance.png"},
+    {"id":4, "category": "boats", "caption": "Art Work", "url": "assets/img/boat_02.jpg"},
+    {"id":5, "category": "boats", "caption": "Art Work", "url": "assets/img/boat_01.png"},
 
 ]
