@@ -13,6 +13,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ImagesComponent } from './images/images.component';
+import { ImageService } from './images/shared/image.service';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     TimelineComponent,
     GalleryComponent,
     AboutusComponent,
-    ContactusComponent
+    ContactusComponent,
+    ImagesComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +37,9 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    ImageService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
