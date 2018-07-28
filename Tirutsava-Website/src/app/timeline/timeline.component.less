@@ -1,0 +1,137 @@
+@background: #252827;
+
+@color-primary: #004ffc;
+@color-light: white;
+@spacing: 50px;
+@radius: 4px;
+
+@date: 120px;
+@dotborder: 4px;
+@dot: 11px;
+@line: 4px;
+
+@font-title: 'Saira', sans-serif;
+@font-text: 'Chivo', sans-serif;
+
+@tech-border: #ff0000;
+@cult-border: #00ff00;
+@pro-border:  #0000ff;
+
+/* Base */
+
+body {
+  background: @background;
+  font-size: 16px;
+}
+
+p {
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 600;
+}
+
+h1 {
+ font-family: @font-title;
+ letter-spacing: 1.5px;
+ color: @color-light;
+ font-weight: 400;
+ font-size: 2.4em;
+}
+
+#content {
+  margin-top: @spacing;
+  text-align: center;
+}
+
+/* Timeline */
+
+.timeline {
+  border-left: @line solid @color-primary;
+  border-bottom-right-radius: @radius;
+  border-top-right-radius: @radius;
+  background: fade(@color-light, 10%);
+  font-family: @font-text;
+  margin: @spacing auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: @spacing;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  min-width: 40%;
+  max-width: 40%;
+
+  .Tech{
+      color: lighten(@tech-border, 25%);
+  }
+
+  .Cult{
+      color: lighten(@cult-border, 25%);
+  }
+
+  .Pro{
+      color: lighten(@pro-border, 25%);
+  }
+
+  h1 {
+   font-family: @font-title;
+   letter-spacing: 1.5px;
+   font-weight: 100;
+   font-size: 2.5em;
+   float: right;
+  }
+
+  h2, h3 {
+   font-family: @font-title;
+   letter-spacing: 1.5px;
+   font-weight: 400;
+   font-size: 1.4em;
+  }
+
+  .event {
+    border-bottom: 1px dashed fade(@color-light, 10%);
+    padding-bottom: (@spacing * 0.5);
+    margin-bottom: @spacing;
+    position: relative;
+    min-width : 80%;
+    padding-left: 10px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border: none;
+    }
+
+    &:before, &:after {
+      position: absolute;
+      display: block;
+      top: 0;
+    }
+/*
+    &:before {
+      left: (((@date * 0.6) + @spacing + @line + @dot + (@dotborder * 2)) * 1.5) * -1;
+      color: fade(@color-light, 80%);
+      content: attr(data-date);
+      text-align: right;
+      font-weight: 100;
+      font-size: 0.9em;
+      min-width: @date;
+      font-family: @font-title;
+    }
+*/
+    &:after {
+      box-shadow: 0 0 0 @dotborder fade(@color-primary,100%);
+      left: (@spacing + @line + (@dot * 0.35)) * -1;
+      background: lighten(@background,5%);
+      border-radius: 50%;
+      height: @dot;
+      width: @dot;
+      content: "";
+      top: 5px;
+    }
+  }
+}

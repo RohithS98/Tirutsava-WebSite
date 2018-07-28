@@ -12,7 +12,7 @@
             <br>
             <div class = "peoplecont">
                 <div class = "tile" *ngFor="let person of com.members">
-                    <img src="../../assets/aboutus/placeholder.png" alt = "why">
+                    <img [src]="person.pic" alt = "why">
                     <h2>{{person.name}}</h2>
                     <h3>{{person.other}}</h3>
                 </div>

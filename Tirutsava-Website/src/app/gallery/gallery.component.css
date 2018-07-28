@@ -5,8 +5,8 @@
     /* background-image: url(../../assets/gallery/back.jpg); */
     background-size: 100%;
     background-attachment: fixed;
-   
-    
+
+
     display: flex;
     flex-flow: column;
     flex-grow: 1;
@@ -16,12 +16,12 @@
 .container{
     display: flex;
     padding: 5px;
-    
+
 }
 .Toggle{
     display: flex;
     flex-direction: column;
-    
+
     flex: 1 1   ;
     height: 100%;
     margin: 10px;
@@ -37,7 +37,7 @@
 .rightBox{
     display: flex;
     flex-direction: column;
-    
+
     align-content: flex-start;
     flex: 2 2;
     height: 100%;
@@ -55,19 +55,19 @@ li{
 }
 
 .tile{
-    
+
     text-align: center;
 }
 .tile:hover{
-    
+
     background: #999;
 }
 
 .tileimg{
-    
+
     width: 180px;
     height: 180px;
-    
+
 }
 
 .image {
