@@ -4,7 +4,7 @@
     /* Uncomment this to set image */
     /* background-image: url(../../assets/aboutus/back.jpg); */
     /* background-size: 100%; */
-    
+
     /* height: -webkit-fill-available; */
 
     display: flex;
@@ -20,7 +20,7 @@
 .view{
     flex: 1 1;
     flex-flow: row;
-    padding-left: 5%;   
+    padding-left: 5%;
     padding-right: 5%;
     margin-left: 2%;
     margin-right:2%;
@@ -36,8 +36,8 @@
 .tile{
 
     flex: 1 1 ;
-    /* min-height: 300px;
-    min-width: 400px; */
+    min-height: 300px;
+    min-width: 350px;
     max-width: 400px;
     max-height: 300px;
     padding: 10px;

@@ -1,5 +1,6 @@
 import { NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
+import {MatRadioModule} from '@angular/material/radio';
 import {
     MatButtonModule,
     MatToolbarModule,
@@ -17,14 +18,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
         MatToolbarModule,
         MatButtonToggleModule,
         MatInputModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        MatRadioModule
     ],
     exports: [
         MatButtonModule,
         MatCardModule,
         MatToolbarModule,
         MatButtonToggleModule,
-        MatInputModule
+        MatInputModule,
+        MatRadioModule
     ],
 })
 

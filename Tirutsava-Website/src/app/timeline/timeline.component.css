@@ -6,8 +6,55 @@
     background-size: 100%;
 
     height: -webkit-fill-available;
-    
+
     display: flex;
     flex-flow: column;
     flex-grow: 1;
+    min-height: 100%;
+}
+
+#dayToggle{
+    margin: auto;
+    text-align: center;
+}
+
+.mat-button-toggle{
+    background-color: #aaaaaa;
+    text-align: center;
+}
+
+.mat-button-toggle-checked{
+    background-color: #eeeeee;
+}
+
+.main{
+    margin: auto;
+    margin-top: 5px;
+    min-width: 100%;
+}
+
+.container{
+    display : flex;
+    flex-flow: row;
+}
+
+.filters{
+    width : 200px;
+    display : flex;
+    flex-flow: column;
+    margin-bottom: 20px;
+}
+
+.filterCont{
+    display : block;
+    margin:auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.content {
+  text-align: center;
+  background: #252827;
+  min-width: 100%;
+  min-height: 100%;
 }
