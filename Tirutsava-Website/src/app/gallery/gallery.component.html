@@ -7,15 +7,15 @@
     </div>
     <br>
     <div id="view">
-        <div class="days" *ngFor="let strip of gallery">
-            <mat-card class="days">
+        <div class="event" *ngFor="let strip of gallery">
+            <div class="days">
                     <h4>{{strip.name}}</h4>
 
-            </mat-card>
+            </div>
             <div class="strip">
-                <button>Prev</button>
+                <button mat-fab>Prev</button>
             
-                        <mat-card class = "card" >
+                        <div class = "card" >
 
                             
                                 
@@ -25,8 +25,8 @@
                     </div>
                     
                 
-            </mat-card>
-            <button>Next</button>
+                </div>
+            <button mat-fab>Next</button>
             </div>
         </div>
     </div>
