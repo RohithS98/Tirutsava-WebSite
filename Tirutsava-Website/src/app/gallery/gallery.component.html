@@ -1,66 +1,33 @@
 <div class="back">
 
     <div class="title">
-       <mat-card >
-          <h2 style="text-align: center;">Gallery is under Construction</h2>
+       <mat-card>
+            <h2 style="text-align: center; color: crimson;"> GALLERY IS UNDER CONSTRUCTION </h2>
        </mat-card>
     </div>
+    <br>
+    <div id="view">
+        <div class="days" *ngFor="let strip of gallery">
+            <mat-card class="days">
+                    <h4>{{strip.name}}</h4>
 
-    <div class = "container">
-        <div class="Toggle">
-             <br>
-        <mat-button-toggle class="tile" [class.active]="filterBy=='all'"(click)="filterBy='all'">
-            Day 1
-        </mat-button-toggle>
-            <br>
-        <mat-button-toggle class="tile" [class.active]="filterBy=='boats'"(click)="filterBy='boats'">
-            Day 2
-        </mat-button-toggle>
-            <br>
-        <mat-button-toggle class="tile">
-            Day 3
-        </mat-button-toggle>
-            <br>
-        <mat-button-toggle class="tile">
-            Day 4
-        </mat-button-toggle>
-            <br>
+            </mat-card>
+            <div class="strip">
+                <button>Prev</button>
+            
+                        <mat-card class = "card" >
 
+                            
+                                
                 
-        </div>
-
-        <div class = "leftBox">
-            <ul id="thumbnailsList">
-                <li *ngFor="let image of visibleImages">
-                    <a [routerLink]="['/image',image.id]">
-                        <img src="{{image.url}}" class="image leftImage">
-                    </a>
-                </li>
-            </ul>
-
-        </div>
-
-        <hr>
-
-        <div class = "rightBox">
-            <ul id="thumbnailsList">
-                <li *ngFor="let image of visibleImages2">
-                    <a [routerLink]="['/image',image.id]">
-                        <img src="{{image.url}}" class="image rightImage">
-                    </a>
-                </li>
-            </ul>
+                    <div class="tile" *ngFor="let img of images"> 
+                            <h3 class="thumbnail">{{img.name}}</h3>
+                    </div>
+                    
+                
+            </mat-card>
+            <button>Next</button>
+            </div>
         </div>
     </div>
-
-   
-   
-   
-        
-
-   
-    
-    
-        
-
 </div>
