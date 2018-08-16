@@ -1,6 +1,6 @@
 .back{
 
-    background-color: dimgray;
+    background-color: black;
     /* Uncomment this to set image */
     /* background-image: url(../../assets/proshows/back.jpg); */
     background-size: 100%;
@@ -11,6 +11,7 @@
     
     margin-left: auto;
     margin-right: auto;
+
     
 }
 
@@ -54,16 +55,19 @@ h4{
     
 }
 .tile{
-    background: black;
+    background: white;
     flex: 1 1 ;
-    border: 2mm solid white;
+    border: 1mm solid dimgrey;
     min-height: 130px;
     height: 100%;
     margin: 0px 10px 0px 10px;
     
 }
 .tile:hover{
-    background: white;
+    background: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1mm solid white;
 }
 h3{
     font-size: 10px;
