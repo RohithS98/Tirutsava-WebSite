@@ -11,21 +11,29 @@
     flex-flow: column;
     flex-grow: 1;
     min-height: 100%;
+    
 }
+
 
 #dayToggle{
     margin: auto;
+    text-align: center;
+}
+h2{
     text-align: center;
 }
 
 .mat-button-toggle{
     background-color: #aaaaaa;
     text-align: center;
+    
 }
 
 .mat-button-toggle-checked{
     background-color: #eeeeee;
+    
 }
+
 
 .main{
     margin: auto;
