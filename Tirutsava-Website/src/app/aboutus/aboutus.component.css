@@ -1,3 +1,10 @@
+@import "./assets/css/new.css";
+@import "./assets/css/normalize.css";
+@import "./assets/css/component.css";
+@import "./assets/css/responsive.css";
+
+
+
 .back{
 
     background-color: teal;
