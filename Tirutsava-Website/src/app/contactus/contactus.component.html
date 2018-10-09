@@ -1,58 +1,37 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="back">
 
-    <div class="title" style="margin: auto">
-       <mat-card>
-          <h2> CONTACT US IS UNDER CONSTRUCTION </h2>
-       </mat-card>
-    </div>
-
     <div class = "formcontainer">
-    <form class = "form">
-        <div class="fullinp">
-            <mat-form-field class="inp">
-                <input matInput placeholder="Email" [formControl]="emailFormControl">
-                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                    Please enter a valid email address
-                </mat-error>
-                <mat-error *ngIf="emailFormControl.hasError('required')">
-                    Email is <strong>required</strong>
-                </mat-error>
-            </mat-form-field>
+        
+        <!------ Include the above in your HEAD tag ---------->
+        
+        <div class="container contact-form">
+                    <div class="contact-image">
+                        <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+                    </div>
+                    <form method="post">
+                        <h3 id = "formTitle">Drop Us a Message</h3>
+                       <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
         </div>
-
-        <div class="fullinp">
-            <mat-form-field class="inp">
-                <input matInput placeholder="Profession" [formControl]="requiredFormControl">
-                <mat-error *ngIf="requiredFormControl.hasError('required')">
-                    Profession is <strong>required</strong>
-                </mat-error>
-            </mat-form-field>
-        </div>
-
-        <div class="fullinp">
-            <mat-form-field class="inp">
-                <textarea matInput placeholder="Details"></textarea>
-            </mat-form-field>
-        </div>
-
-        <div class="button">
-            <input type="submit" value="Submit">
-        </div>
-    </form>
     </div>
 </div>
