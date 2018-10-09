@@ -1,15 +1,16 @@
-<div class="back">
+<div class="back col" >
 
-    <div class="title">
-       <mat-card>
+    <div class="title row">
+            
+       <mat-card class="col"> 
           <h2 style="text-align: center; color: crimson;"> EVENTS IS UNDER CONSTRUCTION </h2>
        </mat-card>
     </div>
 
     <br>
 
-    <div id="toggle">
-    <mat-button-toggle-group [(ngModel)]="selected"> 
+    <div id="toggle" class="row">
+    <mat-button-toggle-group [(ngModel)]="selected" class="col"> 
       <mat-button-toggle value="true"> Show All </mat-button-toggle>
       <mat-button-toggle value="false"> Category </mat-button-toggle>
     </mat-button-toggle-group>
@@ -19,8 +20,11 @@
 
     <div id="view" [ngSwitch]="selected">
         <div id="AllView" *ngSwitchCase="'true'"> 
-                <div class="tile" *ngFor="let event of events"> 
-                    <h3>{{event.name}}</h3>
+
+                <div class="row">
+                        <div class="tile col" *ngFor="let event of events"> 
+                                <h3 class="col-8 col-md-6">{{event.name}}</h3>
+                        </div>
                 </div>
            
         </div>
@@ -28,15 +32,15 @@
         <div id="CategoryView" *ngSwitchCase="'false'" > 
                 <mat-card>
                         <h2> CULTURAL EVENTS </h2>
-                        <div class="tile" *ngFor="let event of cultEvents"> 
-                                <h3>{{event.name}}</h3>
+                        <div class="tile row" *ngFor="let event of cultEvents"> 
+                                <h3 class="col-8 col-md-6">{{event.name}}</h3>
                         </div>
                 </mat-card>
                 
                 <mat-card>
                         <h2> TECHNICAL EVENTS </h2>
-                        <div class="tile" *ngFor="let event of techEvents"> 
-                                <h3>{{event.name}}</h3>
+                        <div class="tile row" *ngFor="let event of techEvents"> 
+                                <h3 class="col-8 col-md-6">{{event.name}}</h3>
                         </div>
                 </mat-card>
         </div>
