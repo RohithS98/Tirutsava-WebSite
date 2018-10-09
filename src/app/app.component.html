@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+<!--
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>Tirutsava</span>
 
     <span class="example-spacer"></span>
 
-    <!-- <a routerLink="/heroes">Heroes</a> -->
     <a routerLink="home">       <button mat-button>Home</button>        </a>
     <a routerLink="events">     <button mat-button>Events</button>      </a>
     <a routerLink="workshops">  <button mat-button>Workshops</button>   </a>
@@ -16,4 +16,72 @@
     <a routerLink="contactus">  <button mat-button>ContactUs</button>   </a>
   </mat-toolbar-row>
 </mat-toolbar>
+-->
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Tirutsava</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="home">
+          <i class="fa fa-home"></i>
+          Home
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="events">
+          <i class="fa fa-sitemap"></i>
+          Events
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="workshops">
+          <i class="fa fa-wrench"></i>
+          Workshops
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="proshows">
+          <i class="fa fa-users"></i>
+          Proshows
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="timeline">
+          <i class="fa fa-clock-o"></i>
+          Timeline
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="gallery">
+          <i class="fa fa-picture-o"></i>
+          Gallery
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="aboutus">
+          <i class="fa fa-info-circle"></i>
+          About Us
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+      <li class="nav-item active float-right">
+        <a class="nav-link" routerLink="contactus">
+          <i class="fa fa-phone"></i>
+          Contact Us
+          <span class="sr-only">(current)</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+</nav>
 <router-outlet></router-outlet>
