@@ -1,0 +1,48 @@
+<div class="back">
+<div class="header">
+    <div class="title" style="margin: auto">
+       <mat-card>
+          <h2>TIMELINE IS UNDER CONSTRUCTION </h2>
+       </mat-card>
+    </div>
+    <br>
+    <div class="main">
+        <div id="dayToggle">
+            <mat-button-toggle-group [(ngModel)]="day" value="d1">
+              <mat-button-toggle value="d1">Day 1</mat-button-toggle>
+              <mat-button-toggle value="d2">Day 2</mat-button-toggle>
+              <mat-button-toggle value="d3">Day 3</mat-button-toggle>
+              <mat-button-toggle value="d4">Day 4</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+        <div class="filterCont">
+            <mat-button-toggle-group class="Type" [(ngModel)]="eventFilter" value="All">
+                <mat-button-toggle value="All">All events</mat-button-toggle>
+                <mat-button-toggle value="Cult">Cultural events</mat-button-toggle>
+                <mat-button-toggle value="Tech">Technical events</mat-button-toggle>
+                <mat-button-toggle value="Pro">Proshows</mat-button-toggle>
+            </mat-button-toggle-group>
+        </div>
+    </div>
+
+        <div class = "container">
+
+            <div class = "content">
+                <ul class="timeline">
+                    <ng-container *ngFor="let event of eventsDay1">
+                        <li class="event"  *ngIf="eventFilter=='All'||eventFilter==event.type" data-date=event.startTime>
+                            <div class="{{event.type}}">
+                                <h1>{{event.startTime}}</h1>
+                                <h3>{{event.name}}</h3>
+                                <p>{{event.desc}}</p>
+                                <p>{{event.startTime}} to {{event.endTime}}</p>
+                            </div>
+                        </li>
+                    </ng-container>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
