@@ -11,6 +11,8 @@
   margin-bottom: 0px !important;
   border-radius: 0px !important;
   overflow: scroll !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
 }
 
 .navbar-icon-top .navbar-nav .nav-link > .fa {
@@ -102,6 +104,10 @@
   .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link > .fa > .badge {
     top: -7px;
   }
+
+  .navbar{
+    overflow-y: auto !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -124,6 +130,10 @@
 
   .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link > .fa > .badge {
     top: -7px;
+  }
+
+  .navbar{
+    overflow-y: auto !important;
   }
 }
 
