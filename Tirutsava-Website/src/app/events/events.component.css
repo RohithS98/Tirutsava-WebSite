@@ -32,8 +32,8 @@
 
 #CategoryView{
     display: flex;
-    /* flex-wrap: wrap;
-    flex-flow: column; */
+    flex-wrap: wrap;
+    flex-flow: column;
 }
 #CategoryView h2{
     margin-left: auto;
