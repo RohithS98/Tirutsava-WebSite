@@ -6,11 +6,11 @@
     background-size: 100%;
     min-height: -webkit-fill-available;
     
-    display: flex;
+    display: flex; 
     flex-flow: column;
     
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 
 #toggle{
@@ -20,8 +20,8 @@
 
 #view{
     min-height: -webkit-fill-available;
-    padding-left: 100px;
-    padding-right: 100px;
+    /* padding-left: 100px; */
+    /* padding-right: 100px; */
 }
 
 #AllView{
@@ -32,8 +32,8 @@
 
 #CategoryView{
     display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
+    /* flex-wrap: wrap;
+    flex-flow: column; */
 }
 #CategoryView h2{
     margin-left: auto;
