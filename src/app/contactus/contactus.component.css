@@ -6,7 +6,7 @@
     /* background-image: url(../../assets/contactus/back.jpg); */
     background-size: 100%;
 
-    height: -webkit-fill-available;
+    height: 200%;
 
     display: flex;
     flex-flow: column;
@@ -18,7 +18,7 @@ body{
 }
 .contact-form{
     background: #fff;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
     width: 70%;
 }
