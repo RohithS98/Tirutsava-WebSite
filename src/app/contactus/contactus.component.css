@@ -68,7 +68,15 @@ form-group{
     font-size: 100px !important;
 }
 
+@media (min-width: 576px){
+    #formTitle{
+        font-size : 2em !important;
+    }
+}
+@media (min-width: 992px){
 #formTitle{
     font-size : 280% !important;
 }
+}
+
 

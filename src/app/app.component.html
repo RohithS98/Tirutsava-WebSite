@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--
-<mat-toolbar color="primary">
+
+<!-- <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>Tirutsava</span>
 
@@ -15,19 +15,26 @@
     <a routerLink="aboutus">    <button mat-button>AboutUs</button>     </a>
     <a routerLink="contactus">  <button mat-button>ContactUs</button>   </a>
   </mat-toolbar-row>
-</mat-toolbar>
--->
+</mat-toolbar> -->
+
 
 <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+
+  <a routerLink="home">
+    <img src="../assets/home/LogoTrans1.png" alt="Logo" class="tiruLogo" >
+  </a>
   <a class="navbar-brand" routerLink="home">
-    <img src="../assets/home/LogoTrans1.png" alt="Logo" class="tiruLogo">
     Tirutsava
   </a>
+
+  <div style="flex: 100">
+   
+  </div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="align-content: flex-end" >
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active float-right">
         <a class="nav-link" routerLink="events">
