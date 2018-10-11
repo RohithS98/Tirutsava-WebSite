@@ -15,7 +15,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ImagesComponent } from './images/images.component';
 import { ImageService } from './images/shared/image.service';
-
+import { CloseMenuDirective } from '../directives/close-menu.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { ImageService } from './images/shared/image.service';
     GalleryComponent,
     AboutusComponent,
     ContactusComponent,
-    ImagesComponent
+    ImagesComponent,
+    CloseMenuDirective
   ],
   imports: [
     BrowserModule,

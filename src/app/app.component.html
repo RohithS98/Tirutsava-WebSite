@@ -15,15 +15,16 @@
     <a routerLink="aboutus">    <button mat-button>AboutUs</button>     </a>
     <a routerLink="contactus">  <button mat-button>ContactUs</button>   </a>
   </mat-toolbar-row>
-</mat-toolbar> -->
+</mat-toolbar>
+-->
 
 
-<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-dark" #menu>
 
   <a routerLink="home">
     <img src="../assets/home/LogoTrans1.png" alt="Logo" class="tiruLogo" >
   </a>
-  <a class="navbar-brand" routerLink="home">
+  <a class="navbar-brand" routerLink="home" appCloseMenu [menu]="menu">
     Tirutsava
   </a>
 
@@ -34,59 +35,59 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="align-content: flex-end" >
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="align-content: flex-end" #menu>
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="events">
+        <a class="nav-link" routerLink="events" appCloseMenu [menu]="menu">
           <i class="fa fa-sitemap"></i>
           Events
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="workshops">
+        <a class="nav-link" routerLink="workshops" appCloseMenu [menu]="menu">
           <i class="fa fa-wrench"></i>
           Workshops
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="proshows">
+        <a class="nav-link" routerLink="proshows" appCloseMenu [menu]="menu">
           <i class="fa fa-users"></i>
           Proshows
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="timeline">
+        <a class="nav-link" routerLink="timeline" appCloseMenu [menu]="menu">
           <i class="fa fa-clock-o"></i>
           Timeline
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="gallery">
+        <a class="nav-link" routerLink="gallery" appCloseMenu [menu]="menu">
           <i class="fa fa-picture-o"></i>
           Archive
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="aboutus">
+        <a class="nav-link" routerLink="aboutus" appCloseMenu [menu]="menu">
           <i class="fa fa-info-circle"></i>
           AboutUs
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="contactus">
+        <a class="nav-link" routerLink="contactus" appCloseMenu [menu]="menu">
           <i class="fa fa-phone"></i>
           Contact Us
           <span class="sr-only">(current)</span>
           </a>
       </li>
       <li class="nav-item active float-right">
-        <a class="nav-link" routerLink="#">
+        <a class="nav-link" routerLink="#" appCloseMenu [menu]="menu">
           <i class="fa fa-handshake-o"></i>
           Sponsors
           <span class="sr-only">(current)</span>
