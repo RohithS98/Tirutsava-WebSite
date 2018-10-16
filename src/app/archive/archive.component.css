@@ -1,11 +1,12 @@
-
-.tile{
-    background-color: teal;
-
+img{
+    margin-bottom: 10px;
 }
-/* 
-@media (min-width: 481px)  { .tile { width: 50%; } }
-@media (min-width: 768px)  { .tile { width: 33.33%; } }
-@media (min-width: 992px)  { .tile { width: 25%; } }
-@media (min-width: 1200px) { .tile { width: 20%; } } */
 
+.top{
+    margin-top:10px;
+}
+.col-md-4{
+    padding: 0px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
