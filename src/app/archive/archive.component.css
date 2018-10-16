@@ -1,0 +1,11 @@
+
+.tile{
+    background-color: teal;
+
+}
+/* 
+@media (min-width: 481px)  { .tile { width: 50%; } }
+@media (min-width: 768px)  { .tile { width: 33.33%; } }
+@media (min-width: 992px)  { .tile { width: 25%; } }
+@media (min-width: 1200px) { .tile { width: 20%; } } */
+
