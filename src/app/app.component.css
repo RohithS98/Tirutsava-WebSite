@@ -11,6 +11,10 @@
     font-size: 2.1vh;
   }
 
+  .logotext{
+    max-width: 17vh;
+  }
+
 .navbar{
   margin-bottom: 0px !important;
   border-radius: 0px !important;
@@ -41,6 +45,30 @@
   top: -10px;
 }
 
+
+.navbarSupportedContent{
+  text-align: right !important;
+}
+
+.nav-item{
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.tiruLogo{
+  width: 6vh;
+  height : 6vh;
+}
+
+.navbar-brand{
+  padding-left: 5px !important;
+}
+
+.navbar-collapse{
+  padding-right:0px;
+}
+
+
 @media (min-width: 576px) {
   .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
     text-align: center;
@@ -61,10 +89,6 @@
 
   .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
     top: -7px;
-  }
-  
-  .mobile{
-    visibility: visible;
   }
 }
 
@@ -88,10 +112,6 @@
 
   .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
     top: -7px;
-  }
-
-  .mobile{
-    visibility: visible;
   }
 }
 
@@ -120,10 +140,6 @@
   .navbar{
     overflow-y: auto !important;
   }
-
-  .mobile{
-    visibility: hidden;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -151,30 +167,4 @@
   .navbar{
     overflow-y: auto !important;
   }
-
-  .mobile{
-    visibility: hidden;
-  }
-}
-
-.navbarSupportedContent{
-  text-align: right !important;
-}
-
-.nav-item{
-  padding-left: 14px;
-  padding-right: 14px;
-}
-
-.tiruLogo{
-  width: 7.5vh;
-  height : 7.5vh;
-}
-
-.navbar-brand{
-  padding-left: 5px !important;
-}
-
-.navbar-collapse{
-  padding-right:0px;
 }
