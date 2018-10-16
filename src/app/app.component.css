@@ -7,6 +7,14 @@
       color: white;
   }
 
+  .nav-link{
+    font-size: 2.1vh;
+  }
+
+  .navbar-brand{
+    font-size: 3vh;
+  }
+
 .navbar{
   margin-bottom: 0px !important;
   border-radius: 0px !important;
@@ -58,6 +66,10 @@
   .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa > .badge {
     top: -7px;
   }
+  
+  .mobile{
+    visibility: visible;
+  }
 }
 
 @media (min-width: 768px) {
@@ -80,6 +92,10 @@
 
   .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link > .fa > .badge {
     top: -7px;
+  }
+
+  .mobile{
+    visibility: visible;
   }
 }
 
@@ -108,6 +124,10 @@
   .navbar{
     overflow-y: auto !important;
   }
+
+  .mobile{
+    visibility: hidden;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -135,6 +155,10 @@
   .navbar{
     overflow-y: auto !important;
   }
+
+  .mobile{
+    visibility: hidden;
+  }
 }
 
 .navbarSupportedContent{
@@ -147,9 +171,8 @@
 }
 
 .tiruLogo{
-  width: 9vh;
-  height : 9vh;
-  padding: 1vh;
+  width: 7.5vh;
+  height : 7.5vh;
 }
 
 .navbar-brand{
