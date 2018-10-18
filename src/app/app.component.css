@@ -12,7 +12,8 @@
   }
 
   .logotext{
-    max-width: 17vh;
+    padding-top: 0.7vh;
+    max-width: 20vh;
   }
 
 .navbar{
@@ -56,24 +57,26 @@
 }
 
 .tiruLogo{
-  width: 6vh;
-  height : 6vh;
+  width: 5vh;
+  height : 5vh;
 }
 
 .navbar-brand{
+  padding: 0px !important;
   padding-left: 5px !important;
 }
 
 .navbar-collapse{
   padding-right:0px;
 }
-
-
+.nav-link{
+  font-size: 2.5vh;
+}
 @media (min-width: 576px) {
   .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link {
     text-align: center;
     display: table-cell;
-    height: 70px;
+    /* height: 70px; */
     vertical-align: middle;
     padding-top: 0;
     padding-bottom: 0;
@@ -96,7 +99,7 @@
   .navbar-icon-top.navbar-expand-md .navbar-nav .nav-link {
     text-align: center;
     display: table-cell;
-    height: 70px;
+    /* height: 70px; */
     vertical-align: middle;
     padding-top: 0;
     padding-bottom: 0;
@@ -119,7 +122,7 @@
   .navbar-icon-top.navbar-expand-lg .navbar-nav .nav-link {
     text-align: center;
     display: table-cell;
-    height: 70px;
+    /* height: 70px; */
     vertical-align: middle;
     padding-top: 0;
     padding-bottom: 0;
@@ -146,7 +149,7 @@
   .navbar-icon-top.navbar-expand-xl .navbar-nav .nav-link {
     text-align: center;
     display: table-cell;
-    height: 70px;
+    /* height: 70px; */
     vertical-align: middle;
     padding-top: 0;
     padding-bottom: 0;
