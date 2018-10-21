@@ -16,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ImagesComponent } from './images/images.component';
 import { ImageService } from './images/shared/image.service';
 import { CloseMenuDirective } from '../directives/close-menu.directive';
+import { ArchiveComponent } from './archive/archive.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { CloseMenuDirective } from '../directives/close-menu.directive';
     AboutusComponent,
     ContactusComponent,
     ImagesComponent,
-    CloseMenuDirective
+    ArchiveComponent,
+
+    CloseMenuDirective,
   ],
   imports: [
     BrowserModule,
