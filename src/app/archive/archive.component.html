@@ -1,3 +1,4 @@
+<!--
 <div class="row top">
   <div class="col-md-12">
     <div id="mdb-lightbox-ui"></div>
@@ -25,3 +26,19 @@
 
   </div>
 </div>
+-->
+
+<div class="row top">
+    <div class="col-md-12">
+  
+      <div class="container">
+  
+        <figure class="col-md-4" *ngFor="let pic of pictures">
+          <img alt="picture" src= "{{prefix}}{{pic}}"
+          class="img-fluid">
+        </figure>
+  
+      </div>
+  
+    </div>
+  </div>
