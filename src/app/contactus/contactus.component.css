@@ -5,8 +5,6 @@
     /* Uncomment this to set image */
     /* background-image: url(../../assets/contactus/back.jpg); */
 
-    height: -webkit-fill-available;
-
     display: flex;
     flex-flow: column;
     flex-grow: 1;
@@ -79,4 +77,18 @@ form-group{
 }
 }
 
+.gform{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 150px;
+    overflow: hidden;
+    flex-flow: column;
+    
+}
 
+
+form {
+    display: block;
+    margin-top: 0em;
+}
