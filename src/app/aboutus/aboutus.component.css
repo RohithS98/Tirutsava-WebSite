@@ -2,7 +2,9 @@
 @import "./assets/css/normalize.css";
 @import "./assets/css/component.css";
 @import "./assets/css/responsive.css";
+/* FontAwesome for working BootSnippet :> */
 
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
 .back{
@@ -77,9 +79,7 @@
     color: #ffffff;
 }
 
-/* FontAwesome for working BootSnippet :> */
 
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 #team {
     background: #eee !important;
 }
