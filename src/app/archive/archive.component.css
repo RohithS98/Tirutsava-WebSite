@@ -37,10 +37,15 @@ img{
 }
 
 .top{
-    margin-top:10px;
+    padding-top:10px;
 }
+
 .col-md-4{
     padding: 0px !important;
     padding-left: 5px !important;
     padding-right: 5px !important;
+}
+
+.back1{
+    background-color: #252525;
 }
