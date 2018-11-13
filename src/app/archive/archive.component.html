@@ -1,44 +1,19 @@
-<!--
-<div class="row top">
-  <div class="col-md-12">
-    <div id="mdb-lightbox-ui"></div>
-
-    <div class="mdb-lightbox no-margin">
-
-      <figure class="col-md-4" *ngFor="let pic of pictures" >  
-        <img alt="picture" src= "{{prefix}}{{pic}}"
-            class="img-fluid">
-      </figure>
-      
-      <figure class="col-md-4" *ngFor="let pic of pictures" >
-        <img alt="picture" src= "{{prefix}}{{pic}}"
-            class="img-fluid">
-      </figure>
-
-      <figure class="col-md-4">
-        <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg" data-size="1600x1067">
-          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg"
-            class="img-fluid">
-        </a>
-      </figure>
-
-    </div>
-
-  </div>
-</div>
--->
-
 <div class="row top back1">
-    <div class="col-md-12">
+    <!-- <div class="col-md-12"> -->
   
-      <div class="container">
-  
-        <figure class="col-md-4" *ngFor="let pic of pictures">
-          <img alt="picture" src= "{{prefix}}{{pic}}"
-          class="img-fluid">
-        </figure>
-  
+      <div class="container ">
+        <div class="row text-center text-lg-left">
+        <!-- <figure class="col-md-4" *ngFor="let pic of pictures">
+          <img alt="picture" src= "{{prefix}}{{pic}}" class="img-fluid">
+        </figure> -->
+        
+        <div class="col-lg-4 col-md-4 col-xs-6" *ngFor="let pic of pictures">
+          <a href="#" class="d-block mb-4 h-100">
+            <img class="img-fluid " src="{{prefix}}{{pic}}" alt="">
+          </a>
+        </div>
+        </div>
       </div>
   
-    </div>
-  </div>
+    <!-- </div> -->
+</div>
