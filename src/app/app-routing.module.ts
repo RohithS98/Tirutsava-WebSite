@@ -11,6 +11,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ImagesComponent } from './images/images.component';
 import { ArchiveComponent } from './archive/archive.component';
+import { Mad4ideasComponent } from './mad4ideas/mad4ideas.component'
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -22,7 +23,7 @@ const routes: Routes = [
     {path: 'aboutus', component:AboutusComponent},
     {path: 'contactus', component:ContactusComponent},
     {path: 'archive', component:ArchiveComponent},
-    
+    {path: 'mad4ideas', component:Mad4ideasComponent},
     {path: "image/:id", component: ImagesComponent},
 
     {path: '', redirectTo: 'home' , pathMatch:'full'}
