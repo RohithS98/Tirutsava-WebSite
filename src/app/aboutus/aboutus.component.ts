@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { mockAboutUs } from './mockaboutus';
+import { Teams } from './mockaboutus';
 
 @Component({
   selector: 'app-aboutus',
@@ -8,11 +8,13 @@ import { mockAboutUs } from './mockaboutus';
 })
 export class AboutusComponent implements OnInit {
 
-    aboutUs = mockAboutUs;
+  teams = Teams;
+  prefix = '../../assets/img/';
 
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
