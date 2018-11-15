@@ -1,6 +1,6 @@
 .back{
 
-    background-color: teal;
+    background-color: #252525;
     /* Uncomment this to set image */
     /* background-image: url(../../assets/home/back.jpg); */
     background-size: 100%;
@@ -12,12 +12,29 @@
     flex-grow: 1;
 }
 
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+.logoAnim{
+    height: 400px;
+    width: 1472px;
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+}
+
+#logo{
+    height: 100%;
+}
+
+.imglogo{
+    height: 100%;
+    width: auto;
+}
+
+#linelogo{
+    height: 100%;
+}
+
+#thelog{
+    height: 80%;
+    width: auto;
+    padding-top: 8%;
+}
