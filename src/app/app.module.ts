@@ -18,6 +18,7 @@ import { ImageService } from './images/shared/image.service';
 import { CloseMenuDirective } from '../directives/close-menu.directive';
 import { ArchiveComponent } from './archive/archive.component';
 import { Mad4ideasComponent } from './mad4ideas/mad4ideas.component';
+import { MadComponent } from './mad/mad.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,8 @@ import { Mad4ideasComponent } from './mad4ideas/mad4ideas.component';
     CloseMenuDirective,
 
     Mad4ideasComponent,
+
+    MadComponent,
   ],
   imports: [
     BrowserModule,

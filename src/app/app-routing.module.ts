@@ -12,6 +12,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { ImagesComponent } from './images/images.component';
 import { ArchiveComponent } from './archive/archive.component';
 import { Mad4ideasComponent } from './mad4ideas/mad4ideas.component'
+import { MadComponent } from './mad/mad.component';
 
 const routes: Routes = [
     {path: 'home', component: HomeComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
     {path: 'archive', component:ArchiveComponent},
     {path: 'mad4ideas', component:Mad4ideasComponent},
     {path: "image/:id", component: ImagesComponent},
+    {path: "mad", component: MadComponent},
 
     {path: '', redirectTo: 'home' , pathMatch:'full'}
 ]
