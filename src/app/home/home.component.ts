@@ -44,6 +44,10 @@ export class HomeComponent implements OnInit {
   ngAfterViewInit(){
     anime.timeline({
     }).add({
+      targets: '.back',
+      backgroundColor: '#252525',
+      duration: 0,
+    }).add({
       targets: '#logo',
       scale: ['0.01','1'],
       rotate: ['0.2turn','1turn'],
@@ -65,6 +69,11 @@ export class HomeComponent implements OnInit {
       easing: 'easeInOutSine',
       duration: 1000,
       offset : 0,
+  }).add({
+    targets: ".back",
+    backgroundColor: '#101010',
+    duration: 1000,
+    offset: '-=20',
   });
   }
 
