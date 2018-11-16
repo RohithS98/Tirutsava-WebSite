@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import * as anime from 'animejs';
 
 @Component({
@@ -7,15 +7,11 @@ import * as anime from 'animejs';
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent implements AfterViewInit {
 
   constructor() { }
 
-  ngOnInit() {
-
-  }
-
-  ngAfterViewInit(){
+  ngAfterViewInit() {
     anime.timeline({
     }).add({
       targets: '.back',
@@ -23,28 +19,28 @@ export class HomeComponent implements OnInit {
       duration: 0,
     }).add({
       targets: '#logo',
-      scale: ['0.01','1'],
-      rotate: ['0.2turn','1turn'],
+      scale: ['0.01', '1'],
+      rotate: ['0.2turn', '1turn'],
       easing: 'easeOutElastic',
-      elasticity:'100',
+      elasticity: '100',
       duration: 3500,
       offset: 0,
     }).add({
-      targets: "#linelogo .a",
+      targets: '#linelogo .a',
       stroke: '#fe8d07',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
       duration: 1200,
       offset : 0,
     }).add({
-      targets: "#linelogo .a1",
+      targets: '#linelogo .a1',
       stroke: '#fe8d07',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutSine',
       duration: 1000,
       offset : 0,
   }).add({
-    targets: ".back",
+    targets: '.back',
     backgroundColor: '#101010',
     duration: 1000,
     offset: '-=20',
