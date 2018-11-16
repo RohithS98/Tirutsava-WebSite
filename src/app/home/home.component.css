@@ -1,20 +1,22 @@
 .back{
 
     background-color: #252525;
-    /* Uncomment this to set image */
-    /* background-image: url(../../assets/home/back.jpg); */
     background-size: 100%;
 
     height: -webkit-fill-available;
-    
-    display: flex;
-    flex-flow: column;
-    flex-grow: 1;
+
 }
 
+.col{
+   padding: 0 0 0 0 !important;
+}
 .logoAnim{
-    height: 400px;
-    width: 1472px;
+    position: relative;
+    top: 25%;
+
+    height: 200px;
+    /* width: 1080px; */
+    align-content: center;
     display: flex;
     flex-flow: row;
     margin: auto;
@@ -26,7 +28,8 @@
 
 .imglogo{
     height: 100%;
-    width: auto;
+    align-content: flex-end;
+    /* width: auto; */
 }
 
 #linelogo{
