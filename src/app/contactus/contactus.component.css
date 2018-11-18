@@ -22,3 +22,24 @@
     top:50%;
     height: 100px  !important;
 }
+
+.grow {
+    -webkit-transition: scale 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: scale 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: scale 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: scale 200ms ease-in;
+    transform: scale(1);   
+}
+.grow:hover {
+    -webkit-transition: scale 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: scale 200ms ease-in;
+    -ms-transform: scale(1.5);   
+    -moz-transition: scale 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: scale 200ms ease-in;
+    transform: scale(1.5);
+}
