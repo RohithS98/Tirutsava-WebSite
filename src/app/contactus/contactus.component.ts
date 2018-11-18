@@ -22,10 +22,11 @@ export class ContactusComponent implements OnInit {
       translateY: ['500', '0'],
       rotate:['0.5turn','0turn'],
       delay: function(el,i,l){
-        return 100 + i*100;
+        return 100 + i*150;
       },
       duration: 1000,
       scale: ['0.05','1'],
     });
+
   }
 }
