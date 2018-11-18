@@ -13,7 +13,7 @@
             
             <div class="row align-items-center" >
               <div class="col-lg col-sm text-center mb-4" *ngFor="let person of team.members">
-                <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
+                <img class="rounded-circle img-fluid d-block mx-auto" src="{{person.pic}}" alt="url(http://placehold.it/200x200)">
                 <br>
                 <h3>{{person.name}} | 
                   <small>{{person.title}}</small>
