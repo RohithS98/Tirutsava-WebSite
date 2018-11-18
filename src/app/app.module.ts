@@ -19,6 +19,7 @@ import { CloseMenuDirective } from '../directives/close-menu.directive';
 import { ArchiveComponent } from './archive/archive.component';
 import { Mad4ideasComponent } from './mad4ideas/mad4ideas.component';
 import { MadComponent } from './mad/mad.component';
+import { MadFormComponent } from './mad-form/mad-form.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,8 @@ import { MadComponent } from './mad/mad.component';
     Mad4ideasComponent,
 
     MadComponent,
+
+    MadFormComponent,
   ],
   imports: [
     BrowserModule,
