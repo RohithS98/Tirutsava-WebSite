@@ -2,3 +2,23 @@
     width: 80%;
     margin: auto;
 }
+
+.mainStuff{
+    background-color: aliceblue;
+    opacity: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.back{
+    background-color: #252525;
+    /* Uncomment this to set image */
+    /* background-image: url(../../assets/contactus/back.jpg); */
+
+    height: -webkit-fill-available;
+    height: 100%;
+}
+
+.row{
+    margin: 0 0 0 0 !important;
+}
