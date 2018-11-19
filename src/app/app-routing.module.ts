@@ -19,19 +19,19 @@ const routes: Routes = [
     {path: 'events', component: EventsComponent},
     {path: 'workshops', component: WorkshopsComponent},
     {path: 'proshows', component: ProshowsComponent},
-    {path: 'timeline', component:TimelineComponent},
-    {path: 'gallery', component:GalleryComponent},
-    {path: 'aboutus', component:AboutusComponent},
-    {path: 'contactus', component:ContactusComponent},
-    {path: 'archive', component:ArchiveComponent},
-    {path: "image/:id", component: ImagesComponent},
-    {path: "mad", component: MadComponent},
-    {path: "madform", component: MadFormComponent},
-    {path: '', redirectTo: 'home' , pathMatch:'full'}
-]
+    {path: 'timeline', component: TimelineComponent},
+    {path: 'gallery', component: GalleryComponent},
+    {path: 'aboutus', component: AboutusComponent},
+    {path: 'contactus', component: ContactusComponent},
+    {path: 'archive', component: ArchiveComponent},
+    // {path: "image/:id", component: ImagesComponent},
+    {path: 'mad', component: MadComponent},
+    {path: 'madform', component: MadFormComponent},
+    {path: '', redirectTo: 'home' , pathMatch: 'full'}
+];
 
 @NgModule({
     exports: [RouterModule],
-    imports:[RouterModule.forRoot(routes)]
+    imports: [RouterModule.forRoot(routes)]
 })
- export class AppRoutingModule{}
+export class AppRoutingModule {}
