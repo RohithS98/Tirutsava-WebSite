@@ -12,6 +12,13 @@
               <input type="text" [(ngModel)]="team_name" name="teamname" class="form-control" placeholder="Team Name" required >
              
             </div>
+
+            <div class="col">
+                <!-- Team Name -->
+                
+                <input type="text" [(ngModel)]="team_number" name="teamnumber" class="form-control" placeholder="Contact Number" required >
+               
+              </div>
       </div>
 
       <p class="h4 mb-1">Mentor Details</p>
@@ -182,7 +189,8 @@
       </div>
 
       <!-- Sign up button -->
-      <button class="btn btn-info my-4 btn-block" type="button" (click)="addUser()">Register</button>
+      {{num}}
+      <button class="btn btn-info my-4 btn-block" type="button" (click)="addTeam()">Register</button>
       {{response}}
     </form>
     <div class="col"></div>
