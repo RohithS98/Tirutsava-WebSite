@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient} from '@angular/common/http' ;
 
-
 @Component({
   selector: 'app-mad-form',
   templateUrl: './mad-form.component.html',
@@ -49,10 +48,23 @@ memPhone5: String;
 memInsti5: String;
 memQual5: String;
 
+response: String = 'nothing' ;
 constructor(private http: HttpClient) { }
 
   addUser(): void {
-    this.http.post('http://localhost:3000/api/member', {}, {responseType: 'text'}).subscribe();
+    this.http.post('http://localhost:3000/api/user',
+    {
+      uname: this.memUsername1,
+      name: this.memName1,
+      email: this.memEmail1,
+      institute: this.memInsti1,
+      qualification: this.memQual1
+    }).subscribe(txt => {
+      this.response = JSON.stringify(txt['status']);
+      if (this.response === '"Success"') {
+        this.response = 'Registraction Successful!';
+      }
+    });
   }
   ngOnInit() {
   }
