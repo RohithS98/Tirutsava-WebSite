@@ -3,8 +3,7 @@
     background-color: white;
     /* Uncomment this to set image */
     /* background-image: url(../../assets/aboutus/back.jpg); */
-    /* background-size: 100%; */
-
-    height: -webkit-fill-available;
+    background-size: 100%; 
+    height: 100%;
 
 }
