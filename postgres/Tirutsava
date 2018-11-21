@@ -1,0 +1,142 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 11.1
+-- Dumped by pg_dump version 11.1
+
+-- Started on 2018-11-19 20:21:54
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 2821 (class 1262 OID 24588)
+-- Name: tirutsava; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+CREATE DATABASE tirutsava WITH TEMPLATE = template0 ENCODING = 'UTF8' LC_COLLATE = 'English_India.1252' LC_CTYPE = 'English_India.1252';
+
+
+ALTER DATABASE tirutsava OWNER TO postgres;
+
+\connect tirutsava
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 197 (class 1259 OID 24597)
+-- Name: mad; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.mad (
+    team_name character varying NOT NULL,
+    mentor_name character varying NOT NULL,
+    mentor_email character varying NOT NULL,
+    team_contact character varying NOT NULL,
+    mentor_number character varying NOT NULL,
+    mem1 character varying NOT NULL,
+    mem2 character varying,
+    mem3 character varying,
+    mem4 character varying,
+    mem5 character varying
+);
+
+
+ALTER TABLE public.mad OWNER TO postgres;
+
+--
+-- TOC entry 196 (class 1259 OID 24589)
+-- Name: users; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.users (
+    username character varying NOT NULL,
+    name character varying NOT NULL,
+    email character varying NOT NULL,
+    institute character varying NOT NULL,
+    qualification character varying NOT NULL
+);
+
+
+ALTER TABLE public.users OWNER TO postgres;
+
+--
+-- TOC entry 2815 (class 0 OID 24597)
+-- Dependencies: 197
+-- Data for Name: mad; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.mad (team_name, mentor_name, mentor_email, team_contact, mentor_number, mem1, mem2, mem3, mem4, mem5) FROM stdin;
+asdfasdfasasd	asdfa	asdfasd	2412341	1234123	xcvbcvb	bxcvb	xbcv	bxcv	\N
+\.
+
+
+--
+-- TOC entry 2814 (class 0 OID 24589)
+-- Dependencies: 196
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.users (username, name, email, institute, qualification) FROM stdin;
+asd	asd	asd	asd	ad
+asdf	asdasf	asdf	adsfa	aadf
+adsf	asdfasf	asdfasdf	adsf	asdfa
+adsfadsfasf	adsfadsfasdf	adsf	asdf	asdf
+fda	asd	asdf	as	as
+asdfasdfasdfasdf	asdf	asdf	asdf	asdf
+afaxczxc	asdfasf	asdffasdfa	asdf	sdfa
+	asdfasf	asdffasdfa	asdf	sdfa
+weewrcscdve	sdfgs g	dfsg s	asdfds	sdfgs
+dgfsdfgds	asdfas	asdfa	sdf	adsf
+asdsokjgkh	asdf 	asdfas	qewqk	jqwe
+xcvbcvb	asfasd	fasdf	asdfasf	acasd
+bxcvb	adasd	fasdfa	asdfas	fasadf
+xbcv	aasdf	sd	casd	asdfasd
+bxcv	asdf	dsf	adf	bv
+\.
+
+
+--
+-- TOC entry 2692 (class 2606 OID 24604)
+-- Name: mad mad_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.mad
+    ADD CONSTRAINT mad_pkey PRIMARY KEY (team_name);
+
+
+--
+-- TOC entry 2690 (class 2606 OID 24596)
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_pkey PRIMARY KEY (username);
+
+
+-- Completed on 2018-11-19 20:22:15
+
+--
+-- PostgreSQL database dump complete
+--
+
