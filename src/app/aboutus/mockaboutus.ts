@@ -38,13 +38,13 @@ export const Teams = [
         new Person('Kiran Jyothi Guntur', 'Head', '../../assets/aboutus/Kiran.jpg', 'https://www.facebook.com/kiranjyothi.guntur', '', '7680951210'),
     ]),
     new Team('Web Design Team', [
-        new Person('Priyansh Sangule', 'Head', '', 'https://www.facebook.com/abstractxan', '', '9165840183'),
+        new Person('Priyansh Sangule', 'Head', '../../assets/aboutus/Priyansh.jpg', 'https://www.facebook.com/abstractxan', '', '9165840183'),
     ]),
     new Team('Events Team', [
         new Person('Mohit Kumar', 'Head', '../../assets/aboutus/Mohit.jpg', 'https://www.facebook.com/mkg9058', '', '7675039900'),
     ]),
     new Team('Content Development Team', [
-        new Person('Anup Kulkarni', 'Head', '', 'https://www.facebook.com/anup.kulkarni.180', '', ''),
+        new Person('Anup Kulkarni', 'Head', '../../assets/aboutus/Anup.jpg', 'https://www.facebook.com/anup.kulkarni.180', '', ''),
     ]),
     new Team('Security Team', [
         new Person('Keerthi Vardhan', 'Head', '../../assets/aboutus/Bro.jpg', 'https://www.facebook.com/keerthi.vardhan.505', '', '7995855703'),
