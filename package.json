@@ -25,6 +25,8 @@
     "@material/textfield": "^0.37.1",
     "animejs": "^2.2.0",
     "core-js": "^2.5.4",
+    "cors": "^2.8.5",
+    "pg-promise": "^8.5.2",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
