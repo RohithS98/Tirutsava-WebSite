@@ -189,9 +189,9 @@
       </div>
 
       <!-- Sign up button -->
-      {{num}}
+      
       <button class="btn btn-info my-4 btn-block" type="button" (click)="addTeam()">Register</button>
-      {{response}}
+      <p *ngIf="response=='Success'">Registered {{num}} Members . {{response}}</p>
     </form>
     <div class="col"></div>
   </div>

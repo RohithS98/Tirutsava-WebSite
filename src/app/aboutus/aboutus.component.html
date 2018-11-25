@@ -18,9 +18,15 @@
                 <h3>{{person.name}} | 
                   <small>{{person.title}}</small>
                 </h3>
-                <a href="{{person.fb_url}}" *ngIf="person.fb_url!=' '" >FB</a>
+                <a href="{{person.fb_url}}" *ngIf="person.fb_url!='null'" ><img src="../../assets/contactus/facebook.svg" class="ico1" alt="FB" /></a>
+                <a href="{{person.twitter_url}}" *ngIf="person.twitter_url !='null'" ><img src="../../assets/contactus/twitter.svg" class="ico1" alt="TW" /></a>
+                <a href="{{person.insta_url}}" *ngIf="person.insta_url !='null'" ><img src="../../assets/contactus/instagram.svg" class="ico1" alt="IN" /></a>
+                <div class="text-center" style="margin:0.5rem">
+                    <p> <i class="fa fa-phone" aria-hidden="true"></i> {{person.number}} </p>
+                </div>
               </div>
             </div>
+            
             <hr>
         </div>     
       <!-- /.container -->
