@@ -44,7 +44,7 @@ export const Teams = [
         new Person('Kiran Jyothi Guntur', 'Head', '../../assets/aboutus/Kiran.jpg', 'https://www.facebook.com/kiranjyothi.guntur', 'null', 'https://www.instagram.com/kj.g_1999/' , 'null' ,'7680951210'),
     ]),
     new Team('Events Team', [
-        new Person('Mohit Kumar', 'Head', '../../assets/aboutus/Mohit.jpg', 'https://www.facebook.com/mkg9058', 'https://twitter.com/mohitgautam2919','null' , 'null' , '7675039900'),
+        new Person('Mohit Kumar', 'Head', '../../assets/aboutus/Mohit.jpg', 'https://www.facebook.com/mkg9058', 'https://twitter.com/mohitgautam2919','https://www.instagram.com/_mohit12_' , 'null' , '7675039900'),
     ]),
     new Team('Web Design Team', [
         new Person('Priyansh Sangule', 'Head', '../../assets/aboutus/Priyanshu.jpg', 'https://www.facebook.com/abstractxan', 'null','https://www.instagram.com/abstractxan/' , 'null' , '9165840183'),

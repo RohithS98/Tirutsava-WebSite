@@ -181,6 +181,9 @@
   background: url(http://hassandesigns.top/html/classified/images/footer-bg.jpg) no-repeat top;
   padding-top: 30px;
   background-size: cover;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0px;
 }
 
 .footer-wrap h3 {

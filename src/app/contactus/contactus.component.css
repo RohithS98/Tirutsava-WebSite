@@ -5,6 +5,9 @@
     /* Uncomment this to set image */
     /* background-image: url(../../assets/contactus/back.jpg); */
 
+    min-height:  10rem;
+    padding-top:10rem;
+    padding-bottom:10rem;
     height: -webkit-fill-available;
     
 }
@@ -18,8 +21,6 @@
 }
 
 .icons{
-    position: relative;
-    top:50%;
     height: 100px  !important;
 }
 
