@@ -1,7 +1,7 @@
 const cors = require('cors')
 
 const corsOptions = {
-  origin: 'http://localhost',
+  origin: 'http://10.21.24.135',
   optionsSuccessStatus: 200
 }
 
@@ -10,7 +10,18 @@ const routes = require('./index');
 const express = require('express');
 
 const app = express();
-app.use(cors(corsOptions))
+app.use(cors());
+app.use((req,res,next)=>{
+  res.header('Access-Control-Allow-Origin','*');
+
+  res.header('Access-Control-Allow-Headers','Origin, X-Requested-With,Content-Type, Accept');
+  next();
+
+  app.options('*', (req, res)=>{
+    res.header('Access-Control-Allow-Methods', 'GET, PATCH, PUT, POST, DELETE, OPTIONS');
+    res.send();
+  });
+});
 
 var bodyParser = require('body-parser');
 app.use(bodyParser.json()); 

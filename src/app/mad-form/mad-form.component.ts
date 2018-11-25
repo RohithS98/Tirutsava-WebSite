@@ -63,7 +63,7 @@ constructor(private http: HttpClient) { }
   }
 
   addUser(): void {
-    this.http.post('http://localhost:3000/api/user',
+    this.http.post('http://10.21.24.135:3000/api/user',
     {
       uname: this.memUsername1,
       name: this.memName1,
@@ -80,7 +80,7 @@ constructor(private http: HttpClient) { }
 
   addTeam(): void {
     this.checkNum();
-    this.http.post('http://localhost:3000/api/team',
+    this.http.post('http://10.21.24.135:3000/api/team',
   {
     team_name : this.team_name,
     mentor_name : this.mentor_name,
