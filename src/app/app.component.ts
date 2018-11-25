@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  gotoTop(event){
-    window.scroll(0,0);
+  gotoTop(event) {
+    window.scroll(0, 0);
   }
 }

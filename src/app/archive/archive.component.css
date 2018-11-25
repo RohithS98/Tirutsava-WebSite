@@ -14,3 +14,11 @@ img{
 .row{
     margin: 0;
 }
+
+.jumbotron{
+    background-color: unset !important;
+}
+
+h1{
+    color: #fe8d07 !important;
+}

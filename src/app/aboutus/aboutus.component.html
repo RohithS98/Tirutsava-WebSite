@@ -18,7 +18,7 @@
                 <h3>{{person.name}} | 
                   <small>{{person.title}}</small>
                 </h3>
-                
+                <a href="{{person.fb_url}}" *ngIf="person.fb_url!=' '" >FB</a>
               </div>
             </div>
             <hr>
