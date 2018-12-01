@@ -26,7 +26,7 @@ export const Teams = [
         new Person('Sai Ritesh', 'Head', '../../assets/aboutus/placeholder.png' , 'null' , 'null' , 'null' , 'null' , '7702447683'),
     ]),
     new Team( 'Sponsorship Team' , [
-        new Person('Neelansh Mathur', 'Head', '../../assets/aboutus/Neelansh.jpg' , 'null' , 'null' , 'null' , 'null' , '9636799254'),
+        new Person('Neelansh Mathur', 'Head', '../../assets/aboutus/Neelansh.jpg' , 'https://m.facebook.com/neelanshm' , 'https://www.instagram.com/mathurneelansh/' , 'null' , 'null' , '9636799254'),
         new Person('Aman Thakur', 'Head', '../../assets/aboutus/Aman.jpg' , 'https://www.facebook.com/profile.php?id=100005109618142' , 'null' , 'null' , 'null' ,'9059279247'),
         new Person('Harthik Rao', 'Head', '../../assets/aboutus/Harthik.jpg' , 'https://www.facebook.com/miriyala.harthikrao' , 'null' , 'https://www.instagram.com/harthik.rao?r=nametag' , 'null' , '9454197941'),
     ]),
@@ -47,7 +47,7 @@ export const Teams = [
         new Person('Mohit Kumar', 'Head', '../../assets/aboutus/Mohit.jpg', 'https://www.facebook.com/mkg9058', 'https://twitter.com/mohitgautam2919','https://www.instagram.com/_mohit12_' , 'null' , '7675039900'),
     ]),
     new Team('Web Design Team', [
-        new Person('Priyansh Sangule', 'Head', '../../assets/aboutus/Priyanshu.jpg', 'https://www.facebook.com/abstractxan', 'null','https://www.instagram.com/abstractxan/' , 'null' , '9165840183'),
+        new Person('Priyansh Sangule', 'Head', '../../assets/aboutus/Priyanshu.jpg', 'https://www.facebook.com/abstractxan', 'null','https://www.instagram.com/abstractxan/' , 'https://github.com/abstractxan' , '9165840183'),
     ]),
     new Team('Content Development Team', [
         new Person('Anup Kulkarni', 'Head', '../../assets/aboutus/Anup1.jpg', 'https://www.facebook.com/anup.kulkarni.180', 'https://twitter.com/AnupKulkarn1', 'https://www.instagram.com/anup.kulkarn1/' , 'null' ,  '9923774284'),
