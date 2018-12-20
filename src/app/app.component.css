@@ -1,4 +1,9 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");  
+
+.nav-item:hover{
+    background-color: #252525;
+    
+}
   .example-spacer {
     flex: 1 1 auto;
   }
@@ -9,6 +14,7 @@
 
   .nav-link{
     font-size: 2.1vh;
+    text-align: center;
   }
 
   .logotext{
@@ -83,6 +89,7 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
 
   .navbar-icon-top.navbar-expand-sm .navbar-nav .nav-link > .fa {
     display: block;

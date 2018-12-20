@@ -6,18 +6,19 @@
     /* background-image: url(../../assets/contactus/back.jpg); */
 
     min-height:  10rem;
-    padding-top:10rem;
-    padding-bottom:10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     height: -webkit-fill-available;
     
 }
 
 .container{
-    margin: 0 0 0 0 !important;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .row{
-    margin: 0 0 0 0 !important;
+    margin: auto !important;
 }
 
 .icons{
