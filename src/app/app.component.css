@@ -185,7 +185,8 @@
 
 
 .footer-wrap {
-  background: url(http://hassandesigns.top/html/classified/images/footer-bg.jpg) no-repeat top;
+  /* background: url(http://hassandesigns.top/html/classified/images/footer-bg.jpg) no-repeat top; */
+  background-color: #141511;
   padding-top: 30px;
   background-size: cover;
   position: absolute;

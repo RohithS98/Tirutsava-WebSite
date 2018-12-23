@@ -9,7 +9,6 @@ import { TimelineComponent } from './timeline/timeline.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
-import { ImagesComponent } from './images/images.component';
 import { ArchiveComponent } from './archive/archive.component';
 import { MadComponent } from './mad/mad.component';
 import { MadFormComponent } from './mad-form/mad-form.component';
@@ -34,4 +33,4 @@ const routes: Routes = [
     exports: [RouterModule],
     imports: [RouterModule.forRoot(routes)]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

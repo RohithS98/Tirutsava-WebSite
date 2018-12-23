@@ -1,44 +1,60 @@
+.content{
+	margin-top: 2rem;
+	margin-bottom: auto;  
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	align-items:center
+}
+
+.container{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
 .back{
 
-    background-color: lightgray;
-    /* Uncomment this to set image */
-    /* background-image: url(../../assets/events/back.jpg); */
+    background-color: #424242;
     background-size: 100%;
     min-height: -webkit-fill-available;
     
     display: flex; 
     flex-flow: column;
     
-    /* margin-left: auto; */
-    /* margin-right: auto; */
 }
 
 ul{
     list-style: none;
     padding: 0 0 0 0 !important;
-    /* margin: 0 0 0 0 !important; */
 }
+
 .link {
     
 	outline: none;
 	text-decoration-line: underline;
 	position: relative;
-	font-size: 2em;
+	font-size: 2.5em;
 	line-height: 1;
-	color: #9e9ba4;
+	/* color: #9e9ba4; */
+	color: #1b998b;
 	display: inline-block;
 }
+
+@media (max-width: 575.98px) { 
+	.link{
+		font-size: 5rem;
+	} 
+}
+
 
 .link--kukuri {
 	text-transform: uppercase;
 	font-weight: 900;
 	overflow: hidden;
 	line-height: 0.75;
-	color: #b2b0a9;
+	color: #1b998b;
 }
 
 .link--kukuri:hover {
-	color: #b2b0a9;
+	color: #1b998a31;
 }
 
 .link--kukuri::after {
@@ -49,7 +65,7 @@ ul{
 	top: 50%;
 	margin-top: -8px;
 	right: 0;
-	background: #F9F9F9;
+	background: #084c692d;
 	transform: translate3d(-100%,0,0);
 	transition: transform 0.4s;
 	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
@@ -64,7 +80,7 @@ ul{
 	position: absolute;
 	z-index: 2;
 	overflow: hidden;
-	color: #424242;
+	color: #084c692d;;
 	white-space: nowrap;
 	width: 0%;
 	transition: width 0.4s 0.3s;
@@ -76,5 +92,6 @@ ul{
 
 .tab{
   text-align: center;
+  margin-top: 1rem;
 }
 

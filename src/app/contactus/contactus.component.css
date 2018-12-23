@@ -1,28 +1,26 @@
 
+.content{
+    width: -webkit-fill-available;
+	margin: auto auto auto auto;  
+	align-items:center
+}
+
 .back{
 
     background-color: #252525;
     /* Uncomment this to set image */
-    /* background-image: url(../../assets/contactus/back.jpg); */
-
-    min-height:  10rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-    height: -webkit-fill-available;
+    /* background-image: url(../../assets/events/back.jpg); */
+    background-size: 100%;
+    min-height: -webkit-fill-available;
     
+    display: flex; 
+    flex-flow: column;
+    
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
-
-.container{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.row{
-    margin: auto !important;
-}
-
-.icons{
-    height: 100px  !important;
+.icon{
+    height: auto  !important;
 }
 
 .grow {
@@ -37,11 +35,11 @@
 }
 .grow:hover {
     -webkit-transition: scale 200ms ease-in;
-    -webkit-transform: scale(1.5);
+    -webkit-transform: scale(1.05);
     -ms-transition: scale 200ms ease-in;
-    -ms-transform: scale(1.5);   
+    -ms-transform: scale(1.05);   
     -moz-transition: scale 200ms ease-in;
-    -moz-transform: scale(1.5);
+    -moz-transform: scale(1.05);
     transition: scale 200ms ease-in;
-    transform: scale(1.5);
+    transform: scale(1.05);
 }

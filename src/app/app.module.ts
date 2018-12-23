@@ -14,8 +14,6 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ImagesComponent } from './images/images.component';
-import { ImageService } from './images/shared/image.service';
 import { CloseMenuDirective } from '../directives/close-menu.directive';
 import { ArchiveComponent } from './archive/archive.component';
 import { MadComponent } from './mad/mad.component';
@@ -32,7 +30,6 @@ import { MadFormComponent } from './mad-form/mad-form.component';
     GalleryComponent,
     AboutusComponent,
     ContactusComponent,
-    ImagesComponent,
     ArchiveComponent,
     CloseMenuDirective,
     MadComponent,
@@ -44,9 +41,6 @@ import { MadFormComponent } from './mad-form/mad-form.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule
-  ],
-  providers: [
-    ImageService
   ],
   bootstrap: [AppComponent]
 })
